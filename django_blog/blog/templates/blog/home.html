@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for context in contexts %}
+        {{context.author}} <br>
+        {{context.title}} <br>
+        {{context.content}} <br>
+        {{context.date_posted|date:"F d, Y"}} <br>
+        <hr>
+    {% endfor %}
+{% endblock %}

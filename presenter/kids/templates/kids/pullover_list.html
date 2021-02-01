@@ -1,0 +1,6 @@
+{% for pullover in object_list %}
+    {{pullover.style}}
+    <a href="{% url 'kids:pullover-details' pullover.id %}">{{pullover.id}}</a>
+{% empty %}
+    No pullover found
+{% endfor %}
