@@ -8,6 +8,8 @@ admin.site.site_header = "MEEK | PRESENTER"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('kids/', include('kids.urls')),
+    path('men/', include('men.urls')),
+    path('women/', include('women.urls')),
 ]
 
 if settings.DEBUG:

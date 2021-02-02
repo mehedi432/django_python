@@ -1,0 +1,6 @@
+{% for vest in object_list %}
+    {{vest.style}}
+    <a href="{% url 'women:vest-details' vest.id%}">{{ vest.id }}</a>
+{% empty %}
+    No product found
+{% endfor %}

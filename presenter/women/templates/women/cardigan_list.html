@@ -1,0 +1,7 @@
+{% for cardigan in object_list %}
+    <a href="{% url 'women:cardigan-details' cardigan.id  %}">{{cardigan.id}}</a>
+    {{cardigan.style}}
+    
+{% empty %}
+    No Cardigan found
+{% endfor %}
