@@ -26,7 +26,10 @@ SECRET_KEY = 'h@15f46^7x8)++_d9fbu1l)7sgfj^j#=dx*n5c#&q(+xpc+s#t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.36',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -34,6 +37,7 @@ INSTALLED_APPS = [
     'kids.apps.KidsConfig',
     'men.apps.MenConfig',
     'women.apps.WomenConfig',
+    'landing.apps.LandingConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',

@@ -4,7 +4,7 @@ from .views import MenCategoryListView, MenCardiganListView, MenCardiganDetailVi
 
 app_name="men"
 urlpatterns = [
-    path('category/', MenCategoryListView.as_view(), name='men-category-index'),
+    path('category/', MenCategoryListView.as_view(), name='category-index'),
 
     path('category/cardigan/', MenCardiganListView.as_view(), name='cardigan-index'),
     path('category/cardigan/<int:pk>/', MenCardiganDetailView.as_view(), name='cardigan-details'),

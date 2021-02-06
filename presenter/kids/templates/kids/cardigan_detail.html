@@ -1,2 +1,8 @@
-{{cardigan.style}}
-{{cardigan.id}}
+{% extends 'kids/base.html' %}
+
+{% block content %}
+    <div class="card shadow text-center">
+        {{cardigan.style}}
+        {{cardigan.id}}
+    </div>
+{% endblock %}

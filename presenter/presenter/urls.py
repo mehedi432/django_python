@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 admin.site.site_header = "MEEK | PRESENTER"
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('', include('landing.urls')),
     path('kids/', include('kids.urls')),
     path('men/', include('men.urls')),
     path('women/', include('women.urls')),

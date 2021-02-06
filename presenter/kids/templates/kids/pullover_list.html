@@ -1,6 +1,16 @@
-{% for pullover in object_list %}
-    {{pullover.style}}
-    <a href="{% url 'kids:pullover-details' pullover.id %}">{{pullover.id}}</a>
-{% empty %}
-    No pullover found
-{% endfor %}
+{% extends 'kids/base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    {% for pullover in object_list %}
+        <div class="col-md-3">
+            <div class="card mt-2">
+                <div class="card-title text-center">
+                    <a href="{% url 'kids:pullover-details' pullover.id %}">{{pullover.style}}</a>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        No pullover found
+    {% endfor %}
+</div>
+{% endblock %}
