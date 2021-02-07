@@ -1,8 +1,48 @@
 {% extends 'kids/base.html' %}
 
 {% block content %}
-    <div class="card shadow text-center">
-        {{cardigan.style}}
-        {{cardigan.id}}
+<div class="container">
+    <div class="card shadow">
+        <div class="row justify-content-center">
+            <img class="justify-content-center" src="{{ cardigan.image.url }}" alt="{{cardigan.style}}" height="377rem"
+                width="55%">
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-secondary">Style: {{cardigan.style}}</li>
+            <li class="list-group-item list-group-item-success">Category: {{cardigan.category}}</li>
+            <li class="list-group-item list-group-item-info">Description: {{cardigan.description}}</li>
+            <li class="list-group-item list-group-item-warning">Composition: {{cardigan.composition}}</li>
+        </ul>
     </div>
+</div>
+<div class="jumbotron mt-3">
+    <div class="row justify-content-center">
+        <div class="col">
+            <li class="list-group-item">Gauge: {{cardigan.gauge}}</li>
+        </div>
+        <div class="col">
+            <li class="list-group-item">Size: {{cardigan.size}}</li>
+        </div>
+        <div class="col">
+            <li class="list-group-item">Weight: {{cardigan.weight}}</li>
+        </div>
+        <div class="col">
+            <li class="list-group-item ">MOQ: {{cardigan.moq}}</li>
+        </div>
+        <div class="col">
+            <li class="list-group-item">FOB: {{cardigan.fob}}</li>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <ul class="list-group shadow">
+        <li class="list-group-item">Mechandiser: Mehedi Abdullah</li>
+        <li class="list-group-item">Buyer: PEPCO</li>
+        <li class="list-group-item">Quantity: 21,000</li>
+        <li class="list-group-item">Shipping Date: 21 Jan 2020</li>
+    </ul>
+</div>
+
+
 {% endblock %}

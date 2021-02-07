@@ -13,23 +13,26 @@
     <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card shadow border border-teal">
                     <div class="card-title text-center">
-                        <a href="{% url 'kids:category-index' %}">Kids</a>
+                        <a class="display-3 text-secondary" style="text-decoration: wavy; letter-spacing: 1.6pt;"
+                            href="{% url 'kids:category-index' %}">Kids</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card shadow border border-teal">
                     <div class="card-title text-center">
-                        <a href="{% url 'men:category-index' %}">Men</a>
+                        <a class="display-3 text-secondary" style="text-decoration: wavy; letter-spacing: 1.6pt"
+                            href="{% url 'men:category-index' %}">Men</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card shadow border border-teal">
                     <div class="card-title text-center">
-                        <a href="{% url 'women:category-index' %}">Women</a>
+                        <a class="display-3 text-secondary" style="text-decoration: wavy; letter-spacing: 1.6pt"
+                            href="{% url 'women:category-index' %}">Women</a>
                     </div>
                 </div>
             </div>
@@ -37,20 +40,33 @@
     </div>
 
 
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-8">
-            <div class="container">
-                <div class="card">
-                    <div class="card-body text-center text-secondary">
-                        More Products
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card shadow border border-teal">
+                        <div class="card-body text-center text-secondary display-3">
+                            <a class="display-3 text-secondary" style="text-decoration: wavy; letter-spacing: 1.6pt"
+                                href="#">More Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="container ">
+                    <div class="card shadow border border-teal">
+                        <div class="card-body text-center text-secondary display-3">
+                            <a class="display-3 text-secondary" style="text-decoration: wavy; letter-spacing: 1.6pt"
+                                href="admin">Admin Interface</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        
-    </script>
+
 </body>
+
 </html>

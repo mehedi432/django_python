@@ -12,6 +12,7 @@ class Category(models.Model):
 class Cardigan(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     style = models.CharField(max_length=34)
+    image = models.ImageField(default='default.jpg', upload_to='kids/cardigan')
     description = models.CharField(max_length=144)
     composition = models.CharField(max_length=89)
     gauge = models.CharField(max_length=34)
@@ -27,6 +28,7 @@ class Cardigan(models.Model):
 class Pullover(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     style = models.CharField(max_length=34)
+    image = models.ImageField(default='default.jpg', upload_to='kids/pullover')
     description = models.CharField(max_length=144)
     composition = models.CharField(max_length=89)
     gauge = models.CharField(max_length=34)
@@ -43,6 +45,7 @@ class Pullover(models.Model):
 class Vest(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     style = models.CharField(max_length=34)
+    image = models.ImageField(default='default.jpg', upload_to='kids/vest')
     description = models.CharField(max_length=144)
     composition = models.CharField(max_length=89)
     gauge = models.CharField(max_length=34)
